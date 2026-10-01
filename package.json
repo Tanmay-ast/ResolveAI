@@ -1,0 +1,32 @@
+{
+  "name": "resolveai-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ResolveAI — Autonomous IT Service Desk Resolution Agent (AI Agent Challenge #12)",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "dev": "npm run dev --workspaces --parallel",
+    "build:server": "npm run build --workspace=server",
+    "build:client": "npm run build --workspace=client",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck:server": "npm run typecheck --workspace=server",
+    "typecheck:client": "npm run typecheck --workspace=client",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": [
+    "ai-agent",
+    "it-service-desk",
+    "autonomous-resolution",
+    "hackathon",
+    "zero-cost"
+  ],
+  "author": "",
+  "license": "MIT"
+}
